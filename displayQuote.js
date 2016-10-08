@@ -7,5 +7,7 @@
 
     quoteContainer.innerHTML = quote
     quoteAuthor.innerText = author
+
+    GLOBALDATA.setTweetButtonHref({ quote: quoteContainer.innerText, author })
   }
 })()

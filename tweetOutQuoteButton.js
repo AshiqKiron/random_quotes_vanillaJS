@@ -7,7 +7,13 @@
 
   var tweetButton = document.createElement('a')
   tweetButton.innerText = 'Tweet'
+  tweetButton.id = 'tweet-button'
+  console.log(tweetButton.id)
   tweetButton.className = 'twitter-share-button'
-  tweetButton.href = 'https://twitter.com/share'
   document.getElementById('twitter-button-container').appendChild(tweetButton)
+
+  GLOBALDATA.setTweetButtonHref = function ({ quote, author }) {
+    tweetButton.href = "https://twitter.com/intent/tweet?text=Hello%20world"
+    console.log(tweetButton.href)
+  }
 })()
