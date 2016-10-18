@@ -11,7 +11,9 @@
     window[uniqFetchQuoteCallBack] = function (data) {
       window[uniqFetchQuoteCallBack] = undefined
       headTag.removeChild(script)
-      callBack(data)
+      if (callBack) {
+        callBack(data)
+      }
     }
 
     var script = document.createElement('script')
