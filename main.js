@@ -3,6 +3,7 @@
   var { jsonP, displayQuote } = GLOBALDATA
 
   var newQuoteButton = document.getElementById('new-quote-button')
+  newQuoteButton.innerText = "New Quote"
 
   function getNewQuoteData() {
     var urlMinusCallBackName = 'http://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1&_jsonp='
