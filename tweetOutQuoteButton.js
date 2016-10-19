@@ -6,7 +6,7 @@
   // document.getElementsByTagName('head')[0].appendChild(script)
   function createTwitterButton(quote, author) {
     var script = document.createElement('script')
-    script.src = 'http://platform.twitter.com/widgets.js'
+    script.src = 'https://platform.twitter.com/widgets.js'
     var headTag = document.getElementsByTagName('head')[0]
     headTag.appendChild(script)
     headTag.removeChild(script)
